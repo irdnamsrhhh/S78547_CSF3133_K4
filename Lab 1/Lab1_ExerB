@@ -1,0 +1,68 @@
+<!--Error 1 (line 1): missing !DOCTYPE-->
+<!--Error 2 (line 2): missing html lang='en'-->
+<!--Error 3 (line 3):missing </title>
+ <!DOCTYPE html>
+ <html lang = "en">
+ <head> 
+ <title>Campus Coding Club</title>
+ <meta charset="utf-8"> 
+ </head> 
+
+ <body> 
+<!--Error 4 (line 7): different heading missing </h1>-->
+<h1>Welcome to Campus Coding Club</h1>
+<!--Error 5 (line 8): missing </p>-->
+<p>We meet every <strong><em>Wednesday</strong></em> at Lab 3.</p>
+<!--Error 6 (line 9): missing </h2>-->
+<h2>Our Activities</h2>
+
+<ul> 
+<!--Error 7 (line 11): missing </li>-->
+<li>Weekly coding sessions</li>
+<li>Hackathon</li> 
+<li>Web design workshop</li> 
+</ol> 
+<p>Visit our university: <a href=www.umt.edu.my>UMT Website</a></p> 
+<img src="C:\Users\irdin\OneDrive\Attachments\Desktop\Lettering coding with gears and code sign text.jpg"> 
+<!--Error 8 (line 17): missing &copy;-->
+<p>&copy; Campus Coding Club & Friends</p>
+</body>
+
+
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+ <title>Campus Coding CLub</title>
+ <meta charset= "utf8">
+</head>
+<body>
+
+<p>
+<a href="Lab1_ExerB.html">Home</a> |
+<a href="contact.html">Contact Us</a>
+</p>
+
+<h2>Committee Members</h2>
+
+
+<dl>
+ <dt>President</dt>
+ <dd>Irdina</dd>
+ <dt>Secretary</dt>
+ <dd>Alya</dd>
+ <dt>Treasurer</dt>
+ <dd>Nurin</dd>
+</dl>
+
+<p>Contact us at
+ <a href="mailto:codingclub@gmail.com">codingclub@gmail.com</a>
+ for more information.</p>
+
+<h4>What our Club Advisor says</h4>
+<blockquote>
+"From organizing our community outreach to supporting one another through busy weeks, you’ve proven that this club is much more than just a line on a resume. It is a team, a safe space, and a practice ground for real leadership.
+As we look ahead to the next chapter, remember that momentum takes steady work. There will be bumps in the road and busy schedules, but lean on each other, ask questions, and don't be afraid to try a bold new idea. My door is always open, and I am endlessly proud to walk this journey alongside you.
+Let's make this next season our best one yet. Thank you!""
+</blockquote>
+
+</body>
