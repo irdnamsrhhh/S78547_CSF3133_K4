@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<!-- 1. Header Section -->
+<div id="header">
+    <h1>Campus <span>Bakery</span></h1>
+    <p>Fresh and delicious cakes for everyone!</p>
+</div>
+
+<!-- 2. Navigation Section -->
+<div id="nav">
+    <a href="#home">Home</a> |
+    <a href="#menu">Menu</a> |
+    <a href="#order">Order</a> |
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- 3. Content Section -->
+<div id="content">
+    <h2 id="home">Welcome to UMT Bakery</h2>
+
+    <p>
+        Welcome to <strong>UMT Bakery</strong>!
+        We sell <em>fresh and delicious</em> cakes
+        for students. You can order your favourite
+        cakes online at an <span>affordable price</span>.
+    </p>
+
+    <h3 id="menu">Our Products</h3>
+    <ul>
+        <li>Cupcake - RM 3.00</li>
+        <li>Cake Slice - RM 5.00</li>
+        <li>Chocolate Cake</li>
+    </ul>
+
+    <h3 id="order">Order Form</h3>
+
+    <!-- HTML5 Order Form -->
+    <form action=""
+          oninput="total.value=
+          (parseInt(cupcakes.value) || 0)*3+
+          (parseInt(slices.value) || 0)*5">
+
+        Customer Name:
+        <input type="text" name="customer"
+               placeholder="Enter your name"
+               required autofocus>
+        <br><br>
+
+        Phone Number:
+        <input type="tel" name="phone"
+               required>
+        <br><br>
+
+        Email:
+        <input type="email" name="email"
+               required>
+        <br><br>
+
+        Pick-up Date:
+        <input type="date" name="pickup"
+               required>
+        <br><br>
+
+        Flavour:
+        <input list="flavours" name="flavour">
+        <datalist id="flavours">
+            <option value="Chocolate">
+            <option value="Vanilla">
+            <option value="Strawberry">
+            <option value="Red Velvet">
+        </datalist>
+        <br><br>
+
+        Icing Colour:
+        <input type="color" name="icing">
+        <br><br>
+
+        Sweetness Level:
+        <input type="range" name="sweetness"
+               min="1" max="5" step="1">
+        <br><br>
+
+        <h3>Price Calculator</h3>
+
+        Cupcakes (RM 3.00 each):
+        <input type="number" id="cupcakes"
+               name="cupcakes" min="0" value="0">
+        <br><br>
+
+        Cake Slices (RM 5.00 each):
+        <input type="number" id="slices"
+               name="slices" min="0" value="0">
+        <br><br>
+
+        Total Price: RM
+        <output name="total"
+                for="cupcakes slices">0</output>
+        <br><br>
+
+        <input type="submit" value="Submit Order">
+
+    </form>
+</div>
+
+<!-- 4. Sidebar Section -->
+<div id="sidebar">
+    <h2>Price List</h2>
+    <ul>
+        <li>Cupcake &ndash; RM 3.00</li>
+        <li>Cake Slice &ndash; RM 5.00</li>
+        <li>Orders &gt; 10 pieces get a free drink</li>
+        <li>Special Cake &copy; Campus Bakery</li>
+        <li>Price starts from RM 3.00&nbsp;only</li>
+    </ul>
+</div>
+
+<!-- 5. Footer Section -->
+<div id="footer">
+    <p id="contact">
+        Contact us: umtbakery@gmail.com
+    </p>
+    <p>&copy; 2026 Campus Bakery</p>
+</div>
