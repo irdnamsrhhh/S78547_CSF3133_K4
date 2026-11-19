@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts: Roboto and Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CORRECT CODE -->
+    <link rel="stylesheet" href="shop.css">
+
+    <!-- WRONG CODE - Original Line 7 -->
+    <!-- <link rel="stylesheets" href="shop.css"> -->
+
+    <!-- CORRECT: Internal CSS inside head -->
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    ERROR IDENTIFICATION
+
+    Error 1 (shop.html, Line 7):
+    Incorrect rel="stylesheets".
+    Correct: rel="stylesheet".
+
+    Error 2 (shop.html, Lines 10-12):
+    Internal CSS placed inside body.
+    Correct: Move style into head.
+
+    Error 3 (shop.html, Line 18):
+    Incorrect inline CSS color=#1B4F72.
+    Correct: color: #1B4F72;
+    Final header uses white text for Part 2.
+
+    Error 4 (shop.html, Line 20):
+    Table ID "product" does not match CSS.
+    Correct: id="products".
+
+    Error 5 (shop.css, Line 2):
+    Robotto should be Roboto.
+
+    Error 6 (shop.css, Line 4):
+    no repeat should be no-repeat.
+
+    Error 7 (shop.css, Line 5):
+    bacground-position should be background-position.
+
+    Error 8 (shop.css, Line 18):
+    display: inline should be display: block.
+
+    Error 9 (shop.css, Line 23):
+    li:a:hover should be li a:hover.
+
+    Error 10 (shop.css, Line 27):
+    collapsed should be collapse.
+
+    Error 11 (shop.css, Line 34):
+    nth-child(2) should be nth-child(even).
+
+    Error 12 (shop.css, Line 37):
+    :hovered should be :hover.
+
+    Error 13 (shop.css, Line 45):
+    Missing semicolon after background-color.
+    -->
+
+    <!-- CORRECT: Internal CSS moved to head -->
+    <!-- WRONG - Original Lines 10-12:
+    <style>
+        h1 { text-align: center; }
+    </style>
+    -->
+
+    <!-- Header Section -->
+    <header id="home">
+
+        <!-- CORRECT: White heading for Part 2 -->
+        <h1>Campus Bookstore</h1>
+
+        <!-- WRONG CODE - Original Line 18 -->
+        <!-- <h1 style="color=#1B4F72;">Campus Bookstore</h1> -->
+
+        <p>
+            Textbooks, stationery and more for every student.
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="books">
+
+            <h2>Available Products</h2>
+
+            <p>
+                Find affordable textbooks, stationery
+                and gadgets for your studies.
+            </p>
+
+            <!-- CORRECT CODE -->
+            <table id="products">
+
+                <!-- WRONG CODE - Original Line 20 -->
+                <!-- <table id="product"> -->
+
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Price (RM)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Textbook</td>
+                        <td>45.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>A4 Notebook</td>
+                        <td>Stationery</td>
+                        <td>6.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>USB Drive 32GB</td>
+                        <td>Gadget</td>
+                        <td>25.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Highlighter Set</td>
+                        <td>Stationery</td>
+                        <td>9.90</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>

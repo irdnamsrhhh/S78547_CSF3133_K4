@@ -1,0 +1,244 @@
+
+/* =================================
+   1. GENERAL PAGE STYLING
+   ================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    /* CORRECT CODE */
+    font-family: 'Roboto', sans-serif;
+
+    /* WRONG CODE - Original Line 2 */
+    /* font-family: 'Robotto', sans-serif; */
+
+    background-color: #f8fafc;
+    background-image: url("books.jpg");
+
+    /* CORRECT CODE */
+    background-repeat: no-repeat;
+
+    /* WRONG CODE - Original Line 4 */
+    /* background-repeat: no repeat; */
+
+    /* CORRECT CODE */
+    background-position: right top;
+
+    /* WRONG CODE - Original Line 5 */
+    /* bacground-position: right top; */
+
+    color: #333;
+}
+
+
+/* =================================
+   2. HEADER WITH BACKGROUND IMAGE
+   ================================= */
+
+header {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("paper.gif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   3. NAVIGATION BAR
+   ================================= */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+
+    /* CORRECT CODE */
+    display: block;
+
+    /* WRONG CODE - Original Line 18 */
+    /* display: inline; */
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* CORRECT CODE */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* WRONG CODE - Original Line 23 */
+/*
+li:a:hover {
+    background-color: #111;
+}
+*/
+
+/* Active Home Link */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+
+/* =================================
+   4. MAIN CONTENT
+   ================================= */
+
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #1B4F72;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =================================
+   5. PRODUCT TABLE
+   ================================= */
+
+#products {
+
+    /* CORRECT CODE */
+    border-collapse: collapse;
+
+    /* WRONG CODE - Original Line 27 */
+    /* border-collapse: collapsed; */
+
+    width: 100%;
+}
+
+/* Table Borders and Padding */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* CORRECT CODE */
+#products tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* WRONG CODE - Original Line 34 */
+/*
+#products tr:nth-child(2) {
+    background-color: #f2f2f2;
+}
+*/
+
+/* CORRECT CODE */
+#products tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* WRONG CODE - Original Line 37 */
+/*
+#products tr:hovered {
+    background-color: #ddd;
+}
+*/
+
+/* Table Header */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Right Align Price Column */
+#products td:last-child {
+    text-align: right;
+}
+
+
+/* =================================
+   6. FOOTER
+   ================================= */
+
+footer {
+
+    /* CORRECT CODE */
+    background-color: #f1f1f1;
+
+    /* WRONG CODE - Original Line 45 */
+    /* background-color: #f1f1f1 */
+
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =================================
+   7. RESPONSIVE DESIGN
+   ================================= */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav li a {
+        padding: 12px;
+    }
+
+    main {
+        width: 95%;
+        padding: 10px;
+        overflow-x: auto;
+    }
+}
