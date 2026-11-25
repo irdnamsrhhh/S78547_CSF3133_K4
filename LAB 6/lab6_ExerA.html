@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+<!-- Link external CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Header -->
+<header>
+    <h1>Rock, Paper, Scissors</h1>
+    <p>Enter your name, click Start Game,
+       then choose Rock, Paper or Scissors.</p>
+</header>
+<!-- Player -->
+<section>
+<h2>
+    <label for="playerName">Your name:</label>
+    <input type="text" id="playerName">
+    <button onclick="startGame()">Start Game</button>
+</h2>
+
+    <p id="welcome"></p>
+</section>
+
+<!-- Game -->
+<section>
+    <button onclick="playRound('rock')">Rock</button>
+    <button onclick="playRound('paper')">Paper</button>
+    <button onclick="playRound('scissors')">Scissors</button>
+
+    <div class="choices">
+        <div>
+            <h2>You</h2>
+            <img id="playerImg" src="rock.png" alt="Player choice">
+        </div>
+        <h2>VS</h2>
+        <div>
+            <h3>Computer</h3>
+            <img id="computerImg" src="rock.png" alt="Computer choice">
+        </div>
+    </div>
+</section>
+
+<!-- Result -->
+<div>
+    <p id="result"></p>
+
+    <p>
+        Wins: <span id="wins">0</span> |
+        Losses: <span id="losses">0</span> |
+        Draws: <span id="draws">0</span>
+    </p>
+</div>
+
+<!-- History -->
+<section>
+    <h2>History</h2>
+    <table id="history">
+        <thead>
+            <tr>
+                <th>Round</th>
+                <th>You</th>
+                <th>Computer</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+    </table>
+    <button onclick="showSummary()">Show Summary</button>
+    <button onclick="resetGame()">Reset</button>
+    <p id="summary"></p>
+</section>
+<!-- Footer -->
+<footer>
+    <p id="startTime"></p>
+    <p>&copy; 2026 COMTECH Club</p>
+</footer>
+<!-- Link external JavaScript -->
+<script src="game.js"></script>
